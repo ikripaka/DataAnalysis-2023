@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Humidity[%] <= -0.196\nsamples = 100.0%\nvalue = [0.289, 0.711]", fillcolor="#8ac5f0"] ;
+1 [label="Pressure[hPa] <= -3.544\nsamples = 17.5%\nvalue = [0.883, 0.117]", fillcolor="#e89253"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Temperature[C] <= 0.515\nsamples = 1.7%\nvalue = [0.022, 0.978]", fillcolor="#3d9fe6"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+4 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 4 ;
+5 [label="Pressure[hPa] <= -0.35\nsamples = 15.9%\nvalue = [0.975, 0.025]", fillcolor="#e6843e"] ;
+1 -> 5 ;
+6 [label="(...)", fillcolor="#C0C0C0"] ;
+5 -> 6 ;
+7 [label="(...)", fillcolor="#C0C0C0"] ;
+5 -> 7 ;
+8 [label="NC1.0 <= -0.091\nsamples = 82.5%\nvalue = [0.162, 0.838]", fillcolor="#5fb0ea"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="NC0.5 <= -0.114\nsamples = 20.5%\nvalue = [0.511, 0.489]", fillcolor="#fefaf7"] ;
+8 -> 9 ;
+10 [label="(...)", fillcolor="#C0C0C0"] ;
+9 -> 10 ;
+11 [label="(...)", fillcolor="#C0C0C0"] ;
+9 -> 11 ;
+12 [label="Raw Ethanol <= 1.134\nsamples = 61.9%\nvalue = [0.046, 0.954]", fillcolor="#43a2e6"] ;
+8 -> 12 ;
+13 [label="(...)", fillcolor="#C0C0C0"] ;
+12 -> 13 ;
+14 [label="(...)", fillcolor="#C0C0C0"] ;
+12 -> 14 ;
+}
